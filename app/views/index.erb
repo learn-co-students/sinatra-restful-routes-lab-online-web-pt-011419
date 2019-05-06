@@ -3,6 +3,6 @@
 
     <%@recipes.each.with_index do |recipe, index|%>
 <p>
-    <a href="/recipes/<%=recipe.id%>"> <%=index + 1%>: <%=recipe.name%> <%=recipe.ingredients%> <%=recipe.cook_time%></a>
+    <a href="/recipes/<%=recipe.id%>"> <h2>Recipe <%=index + 1%> -</a></h2> <h3>Name:</h3> <%=recipe.name%> <h3>Ingredients:</h3> <%=recipe.ingredients%> <h3>Cook Time:</h3> <%=recipe.cook_time%>
 </p>
     <%end%>

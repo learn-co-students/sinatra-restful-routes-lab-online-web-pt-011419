@@ -1,9 +1,9 @@
 <h1> Your Recipe: </h1>
 
 <p>
-    <label>Name: <%=@recipe.name%></label>
-    <label>Ingredients: <%=@recipe.ingredients%></label>
-    <label>Cook Time: <%=@recipe.cook_time%></label>
+    <h3>Name: </h3><%=@recipe.name%>
+    <h3>Ingredients: </h3><%=@recipe.ingredients%>
+    <h3>Cook Time: </h3><%=@recipe.cook_time%>
 </p>
 <form action="/recipes/<%=@recipe.id%>" method="post">
   <input type="hidden" name="_method" value="delete">
